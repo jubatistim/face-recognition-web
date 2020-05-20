@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>AI by Juliano Batistim</title>
+  <head>
+    <!-- <link href="../static/main.css" rel="stylesheet"> -->
+    <link href="{{ url_for('static', filename='main.css') }}"  rel="stylesheet"/>
+  </head>
+    <body>
+      <div class="container">
+        <h1>CNN for face recognition</h1>
+        <h3>Convolutional neural network trainned to recognize faces of <b>Juliano</b> and <b>Luna</b></h3>
+        <form action="{{url_for('success')}}" method="POST" enctype="multipart/form-data">
+          <input type="file" name="file" /> <br>
+          <button type="submit"> Submit </button>
+        </form>  
+      </div>
+    </body>
+</html>
