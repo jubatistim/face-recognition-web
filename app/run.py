@@ -24,8 +24,6 @@ def success():
         npimg = numpy.fromstring(filestr.read(), numpy.uint8)
         # convert numpy array to image
         img = cv2.imdecode(npimg, cv2.COLOR_RGB2BGR)
-
-        print(img.shape)
         
         image_predicted = predict_Luna_Ju(img)
             
@@ -36,5 +34,4 @@ def success():
         return render_template("success.html", img = image_file)
 
 if __name__ == '__main__':
-    app.debug=True
     app.run()
