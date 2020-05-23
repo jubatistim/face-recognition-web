@@ -10,6 +10,8 @@ services:
       - APP_NAME=AIJB
     expose:
       - 8080
+    # ports: 
+    #   - "80:80"
 
   nginx:
     build: ./nginx
