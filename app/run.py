@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, send_file, url_for
 from werkzeug.utils import secure_filename
-import tensorflow as tf
 import numpy
 import calendar
 import time
